@@ -51,12 +51,17 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className = "nav-item">
-                            <Link to = "/add-missing-dog" className = "nav-links-mobile" onClick = {closeMobileMenu}>
-                                Add Missing Pet
+                            <Link to = "/add-missing-pet" className = "nav-links" onClick = {closeMobileMenu}>
+                                + Add Missing Pet
+                            </Link>
+                        </li>
+                        <li className = "nav-item">
+                            <Link to = "/login" className = "nav-links-mobile" onClick = {closeMobileMenu}>
+                                Login
                             </Link>
                         </li>
                     </ul>
-                    {button && <Button buttonStyle = 'btn--outline'>+ Add Missing Pet</Button>}
+                    {button && <Button buttonStyle = 'btn--outline'>Login</Button>}
                 </div>
             </div>
         </>
