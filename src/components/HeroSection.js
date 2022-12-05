@@ -1,19 +1,15 @@
-import React from 'react';
-import { Button } from './Button';
 import './HeroSection.css';
 
 function HeroSection() {
-    return (
-        <div className ='hero-container' >
-            <h1>WELCOME TO KENYA!</h1>
-            <p>Let's dive in</p>
-            <div className = 'hero-btns'>
-                <Button className = 'btns' buttonStyle= 'btn--outline' buttonSize = 'btn--large' >
-                    GET STARTED
-                </Button>
-            </div>
+return (
+    <>
+    <div className="hero-section">
+        <div className="cta">
+            <h1>Find Your Missing Pet</h1>
+            <p>Are you sick of searching for your pets all over the neighbourhood and making repetitive posts online? This app is for you.</p>
         </div>
-    )
+    </div>
+    </>
+)
 }
-
 export default HeroSection
