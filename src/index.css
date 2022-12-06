@@ -1,1 +1,9 @@
-
+* {
+    font-family: 'Poppins', serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', serif;
+    font-weight: bold;
+}
