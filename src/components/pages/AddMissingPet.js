@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
-import '../../App.css';
+import './AddMissingPet.css';
 
-function AddDestination() {
+function AddMissingPet() {
     const [newData, setNewData] = useState({
-        src: "",
-        text: "",
-        label: ""
+        name: "",
+        breed: "",
+        image_url: "",
+        last_seen: "",
+        user_id: 1
     });
-
 
     function handleSubmit(event){
         event.preventDefault();
-        fetch("http://localhost:3000/destinations", {
+        fetch("/dogs", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
@@ -29,28 +30,76 @@ function AddDestination() {
 
     return (
         <React.Fragment>
-            <div className = "message-input">
-                <h4>Kindly fill in the form below to add a new Destination:</h4>
-                <form id="messageForm" onSubmit={handleSubmit}>
-                    <div className="mb-3">
-                        <label  className="form-label">Image Source:</label>
-                        <input onChange={handleChange} value={newData.src} type="text" className="form-control" id="src" aria-describedby="src" placeholder='Enter the image address...'/>
-                    </div>
-                    <div className="mb-3">
-                        <label className="form-label">Destination Description:</label>
-                        <textarea onChange={handleChange} value={newData.text} className="form-control" id="text" rows="3" placeholder='Enter the destination description...'></textarea>
-                    </div>
-                    <div className="mb-3">
-                        <label className="form-label">Label:</label>
-                        <input onChange={handleChange} value={newData.label} type="text" min="0" className="form-control" id="label" aria-describedby="label" placeholder='Enter the destination name...'/>
-                    </div>
-                    
-                    <button type="submit" id = "messageButton" className="btn btn-primary">Add Destination</button>
-                </form>
-            </div>
+            <form className="newform" onSubmit={handleSubmit}>
+                <div className = "form-title">
+                    <h1>Add Missing Pet</h1>
+                    <p>Kindly fill the form below</p>
+                </div>
+            <label className="label">
+                Name
+                <input
+                onChange={(e) => handleChange(e)}
+                id="name"
+                value={newData.name}
+                type="text"
+                placeholder="  Add pet name"
+                />
+            </label>
+            <label className="label">
+                Breed
+                <input
+                onChange={(e) => handleChange(e)}
+                id="breed"
+                value={newData.breed}
+                type="text"
+                placeholder="  Add pet breed"
+                />
+            </label>
+            <br />
+            <label className="label">
+                    Owner
+                <input
+                    onChange={(e) => handleChange(e)}
+                    id="owner"
+                    type="number"
+                    value={newData.user_id}
+                    />
+                </label>
+                <label className="label">
+                    Image_url
+                    <input
+                    style={{ width: "420px" }}
+                    type="img"
+                    onChange={(e) => handleChange(e)}
+                    id="image_url"
+                    name="image"
+                    placeholder="   Add image url"
+                    value={newData.image_url}
+                    ></input>
+                </label>
+                <br />
+                <label className="label">
+                    Last_Seen_Location
+                    <textarea
+                    className="dog-area"
+                    style={{ width: "1025px" }}
+                    onChange={(e) => handleChange(e)}
+                    name="last_seen"
+                    id="last_seen"
+                    cols="50"
+                    rows="3"
+                    value={newData.last_seen}
+                    ></textarea>
+                </label>
+                <br />
+                <br />
+                <button id="button1" className="adddog">
+                    Add Missing Pet
+                </button>
+    </form>
             
         </React.Fragment>
     )
 }
 
-export default AddDestination;
+export default AddMissingPet;
