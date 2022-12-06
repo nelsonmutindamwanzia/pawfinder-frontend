@@ -8,6 +8,7 @@ import Cards from "./components/Cards";
 // import DestinationDetails from "./components/pages/DestinationDetails";
 import Login from "./components/Login";
 import Footer from './components/Footer';
+import AddMissingPet from './components/pages/AddMissingPet';
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
             <Route exact path="/" component = {Home} ></Route>
             <Route path="/about" exact component = {About} ></Route>
             <Route path="/dog-page" exact component = {Cards} ></Route>
-            <Route path="/login" exact component = {<Login/>} ></Route>
+            <Route path="/add-missing-pet" exact component = {AddMissingPet} ></Route>
+            <Route path="/login" exact component = {Login} ></Route>
           </Switch>
           <Footer />
         </Router>
