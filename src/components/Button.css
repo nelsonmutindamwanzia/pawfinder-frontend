@@ -16,6 +16,10 @@
     border: 1px solid #FEF3D5;
 }
 
+.btn-mobile{
+    padding: 10px;
+}
+
 .btn--outline {
     background-color: #FEF3D5;
     color: black;
