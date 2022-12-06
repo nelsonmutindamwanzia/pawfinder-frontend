@@ -5,6 +5,7 @@ import './App.css';
 import Home from "./components/pages/Home";
 // import Cards from "./components/Cards";
 // import DestinationDetails from "./components/pages/DestinationDetails";
+import Signup from './components/Signup'
 import Login from "./components/Login";
 import Footer from './components/Footer';
 import AddMissingPet from './components/pages/AddMissingPet';
@@ -22,6 +23,7 @@ function App() {
             <Route path="/contacts" exact component = {AboutContact} ></Route>
             <Route path="/add-missing-pet" exact component = {AddMissingPet} ></Route>
             <Route path="/login" exact component = {Login} ></Route>
+            <Route path="/signup" exact component = {Signup} ></Route>
           </Switch>
           <Footer />
         </Router>
