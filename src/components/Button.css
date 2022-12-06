@@ -13,11 +13,11 @@
 .btn--primary {
     background-color: var(--primary);
     color: #242424;
-    border: 1px solid var(--primary);
+    border: 1px solid #FEF3D5;
 }
 
 .btn--outline {
-    background-color: white;
+    background-color: #FEF3D5;
     color: black;
     padding: 8px 20px;
     border: 1px solid var(--primary);
@@ -37,7 +37,7 @@
 .btn--large:hover,
 .btn--medium:hover {
     transition: all 0.3s ease-out;
-    background: pink;
-    color: black;
+    background: #000505;
+    color: #fafafa;
     transition: all 0.3s ease-out;
 }
