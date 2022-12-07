@@ -2,42 +2,32 @@ import React from 'react';
 import './Button.css';
 import {Link} from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline']
+function Button({user, setUser}){
 
-const SIZES = ['btn--medium', 'btn--large']
-
-export const Button = ({
-    children, 
-    type, 
-    onClick, 
-    buttonStyle, 
-    buttonSize
-}) => {
-    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
-
-    const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
+    function handleLogoutClick(){
+        fetch("/logout", { method: "DELETE" }).then((r) => {
+            if (r.ok) {
+                setUser(null);
+            }
+        });
+    }
 
     return (
         <>
-        <Link to = "/login" className = "btn-mobile">
-            <button
-            className = {`${checkButtonStyle} ${checkButtonSize}`}
-            onClick = {onClick}
-            type = {type}
-            >
-                {children}
-            </button>
-        </Link>
-
-        <Link to = "/signup" className = "btn-mobile">
-            <button
-            className = {`${checkButtonStyle} ${checkButtonSize}`}
-            onClick = {onClick}
-            type = {type}
-            >
-                Sign Up
-            </button>
-        </Link>
+        <div>
+            {user ? (
+            <button onClick={handleLogoutClick} className="button3">Logout</button>
+            ) : (
+                <>
+                <div id="sign-login"> 
+                    <Link to="/signup">Signup  / </Link>   
+                    <Link to="/login"> Login</Link>
+                </div>
+                </>
+            )}
+        </div>
         </>
     )
 };
+
+export default Button;
