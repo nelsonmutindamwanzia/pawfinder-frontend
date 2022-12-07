@@ -7,7 +7,7 @@ function AddMissingPet() {
         breed: "",
         image_url: "",
         last_seen: "",
-        user_id: 1
+        user_id: 11
     });
 
     function handleSubmit(event){
