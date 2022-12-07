@@ -1,41 +1,39 @@
-.signup-form{
-    height: auto;
-    width: auto;
-    border-radius: 15px;
-    box-sizing: border-box;
-    border: 1px solid #cecbc5;
+.signup-form {
     background-color: #f6f6f6;
+    border:none;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    width: 600px;
     margin: 0 auto;
-    padding: 20px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 25px;
-    margin-right: 25px;
+    padding: 0 1rem 1rem;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    font-weight: 500;
 }
 
-.label {
-    width: 80px;
-    height: 25px;
-    left: 162px;
-    top: 172px;
-    color: #000505;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    margin-left: 150px;
-    margin-top: 5%;
-    margin-right: 30%;
-}
-
-.button2 {
-    background: #000505;
-    border-radius: 20px;
-    align-items: center;
+.signup-form h1{
     text-align: center;
-    margin-left: 43%;
-    border-style: none;
-    padding: 10px 30px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.signup-form input {
+    margin: 0.25rem 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.signup-form button[type="submit"] {
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+    color: #f6f6f6;
+    margin-bottom: 10px;
+    background-color: #000505;
+    border-radius: 5px;
 }
