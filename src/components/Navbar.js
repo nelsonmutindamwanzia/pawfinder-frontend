@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
-import { Button } from './Button';
+import Button from './Button';
 import './Navbar.css';
 
-function Navbar() {
+function Navbar({user, setUser}) {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -33,8 +33,8 @@ function Navbar() {
             <div className ="navbar">
                 <div className ="navbar-container">
                     <Link to='/' className='navbar-logo' onClick = {closeMobileMenu}>
-                        PawFinder
-                        <i class="fa-paw" />
+                    🐾 PawFinder
+                        <i class="fas fa-paw" />
                     </Link>
                     <div className = "menu-icon" onClick = {handleClick}>
                         <i className = {click ? "fas fa-times":"fas fa-bars"} />
@@ -55,13 +55,10 @@ function Navbar() {
                                 + Add Missing Pet
                             </Link>
                         </li>
-                        <li className = "nav-item">
-                            <Link to = "/login" className = "nav-links-mobile" onClick = {closeMobileMenu}>
-                                Login
-                            </Link>
-                        </li>
                     </ul>
-                    {button && <Button buttonStyle = 'btn--outline'>Login</Button>}
+                    <div className="btn-logout">
+                        {<Button user={user} setUser={setUser}/>}
+                    </div>
                 </div>
             </div>
         </>
