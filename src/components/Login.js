@@ -40,6 +40,7 @@ function Login({ onLogin, signup }) {
                     type="text"
                     id="username"
                     autoComplete="off"
+                    placeholder=" Please enter your username..."
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />
@@ -48,6 +49,7 @@ function Login({ onLogin, signup }) {
                     type="password"
                     id="password"
                     autoComplete="current-password"
+                    placeholder=" Please enter your password..."
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
