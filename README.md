@@ -9,7 +9,7 @@
 4. Figma for frontend design
 ### Frontend Setup
 1. Fork and clone this repository and navigate to the local directory then run `npm install` to install all the required gems.
-2. Run `rails s` or `npm start` to run the server on port 9292. You can also access it by clicking on this link [here](http://localhost:4000).
+2. Run `npm start` to run the server on port 4000. You can also access it by clicking on this link [here](http://localhost:4000).
 
 ### Future Updates
 1. Add functionality to allow users chat with pet owners via Direct Message.
