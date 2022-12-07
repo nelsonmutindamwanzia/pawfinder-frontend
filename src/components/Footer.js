@@ -23,7 +23,7 @@ function Footer() {
           <small class='website-rights'>PawFinder © 2022 || All rights reserved</small>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              PawFinder
+            🐾 PawFinder
               <FontAwesomeIcon icon="fa-solid fa-paw" />
             </Link>
         </div>
