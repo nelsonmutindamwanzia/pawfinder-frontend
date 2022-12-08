@@ -11,6 +11,9 @@
 1. Fork and clone this repository and navigate to the local directory then run `npm install` to install all the required gems.
 2. Run `npm start` to run the server on port 4000. You can also access it by clicking on this link [here](http://localhost:4000).
 
+### Known Issues
+1. When opening the app using the netlify live link and upon clicking either `login` or `sign up` buttons, an error, `Uncaught (in promise) SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data` is displayed in the console. A fix to this issue will be appreciated.
+
 ### Future Updates
 1. Add functionality to allow users chat with pet owners via Direct Message.
 2. Allow pet owners to delete their posts/updates.
@@ -41,8 +44,10 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 - [Nelson Mutinda](https://github.com/nelsonmutindamwanzia)
 - nmutinda02@gmail.com
 
-### Live Frontend Link
-
+### Live Links
+- [Frontend](https://pawfinder-web.netlify.app/)
+- [Backend](https://paw-finder-production.up.railway.app)
+-
 ### Backend Repository Link
 - [PawFinder Backend](https://github.com/nelsonmutindamwanzia/pawfinder-backend)
 
