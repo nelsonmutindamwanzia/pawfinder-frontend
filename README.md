@@ -12,7 +12,7 @@
 2. Run `npm start` to run the server on port 4000. You can also access it by clicking on this link [here](http://localhost:4000).
 
 ### Known Issues
-1. When opening the app using the netlify live link and upon clicking either `login` or `sign up` buttons, an error, `Uncaught (in promise) SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data` is displayed in the console. A fix to this issue will be appreciated.
+1. Review component displays static data due to a fault with authorization. Any help to fix this issue will highly be appreciated.
 
 ### Future Updates
 1. Add functionality to allow users chat with pet owners via Direct Message.
