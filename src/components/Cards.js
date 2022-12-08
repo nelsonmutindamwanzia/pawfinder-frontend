@@ -14,9 +14,6 @@ function Cards() {
     .catch(console.log);
 }, [setDogs]);
 
-console.log(dogs)
-console.log(setDogs)
-
 function handleClick (index){
   setCurrentIndex(index);
 }
