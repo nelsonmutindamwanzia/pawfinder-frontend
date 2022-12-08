@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 function Button({user, setUser}){
 
     function handleLogoutClick(){
-        fetch("/logout", { method: "DELETE" }).then((r) => {
+        fetch("https://paw-finder-production.up.railway.app/logout", { method: "DELETE" }).then((r) => {
             if (r.ok) {
                 setUser(null);
             }
