@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Signup.css';
 import styled from "styled-components";
 import Error from './Error';
+import Footer from './Footer';
 
 function Signup({ onLogin }) {
 
@@ -38,6 +39,7 @@ function Signup({ onLogin }) {
     });
     }
     return (
+        <>
         <form onSubmit={handleSubmit} className = "signup-form">
         <h1>🐾 PawFinder</h1>
         <h1>  Signup Form</h1>
@@ -83,7 +85,10 @@ function Signup({ onLogin }) {
             <Error key={err}>{err}</Error>
             ))}
         </FormField>
+        
         </form>
+        <Footer />
+        </>
     );
 }
 
