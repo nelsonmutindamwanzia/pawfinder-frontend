@@ -12,7 +12,7 @@ function AddMissingPet() {
 
     function handleSubmit(event){
         event.preventDefault();
-        fetch("https://paw-finder-production.up.railway.app/dogs", {
+        fetch("https://paw-finder-render.onrender.com/dogs", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",
