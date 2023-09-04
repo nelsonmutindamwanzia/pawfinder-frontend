@@ -46,7 +46,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ### Live Links
 - [Frontend](https://pawfinder-web.netlify.app/)
-- [Backend](https://paw-finder-production.up.railway.app)
+- [Backend](https://paw-finder-render.onrender.com)
 ### Backend Repository Link
 - [PawFinder Backend](https://github.com/nelsonmutindamwanzia/pawfinder-backend)
 
