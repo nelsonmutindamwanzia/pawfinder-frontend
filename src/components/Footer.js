@@ -20,7 +20,7 @@ function Footer() {
       </div>
       <section class='social-media'>
         <div class='social-media-wrap'>
-          <small class='website-rights'>PawFinder © 2022 || All rights reserved</small>
+          <small class='website-rights'>PawFinder © 2022-2023 || All rights reserved</small>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
             🐾 PawFinder
