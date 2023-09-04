@@ -18,7 +18,7 @@ function Signup({ onLogin }) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("https://paw-finder-production.up.railway.app/signup", {
+        fetch("https://paw-finder-render.onrender.com/signup", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

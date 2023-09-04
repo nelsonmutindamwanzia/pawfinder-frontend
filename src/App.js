@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     // auto-login
-    fetch("https://paw-finder-production.up.railway.app/me").then((r) => {
+    fetch("https://paw-finder-render.onrender.com/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }

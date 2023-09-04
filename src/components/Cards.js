@@ -8,7 +8,7 @@ function Cards() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-  fetch("https://paw-finder-production.up.railway.app/dogs")
+  fetch("https://paw-finder-render.onrender.com/dogs")
     .then((response) => response.json())
     .then((data) => setDogs(data))
     .catch(console.log);
