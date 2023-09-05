@@ -17,9 +17,10 @@
 ### Future Updates
 1. Add functionality to allow users chat with pet owners via Direct Message.
 2. Allow pet owners to delete their posts/updates.
+3. Recreate the Navbar component to display nav-items on mobile devices.
 
 ### Copyright and License (MIT)
-Copyright (c) 2022 Mwanzia Nelson Mutinda
+Copyright (c) 2023 Mwanzia Nelson Mutinda
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
