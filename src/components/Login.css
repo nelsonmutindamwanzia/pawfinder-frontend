@@ -1,11 +1,12 @@
+/* Default styles for .login-form */
 .login-form {
     background-color: #f6f6f6;
-    border:none;
-    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    border: none;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     display: flex;
-    width: 50%;
     flex-direction: column;
-    width: 600px;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    width: 90%; /* Adjust the width for smaller screens */
     margin: 0 auto;
     padding: 0 1rem 1rem;
     margin-top: 125px;
@@ -13,11 +14,11 @@
     font-weight: 500;
 }
 
-.login-form p{
+.login-form p {
     text-align: center;
 }
 
-.login-form h1{
+.login-form h1 {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -26,8 +27,9 @@
 .login-form input {
     margin: 0.25rem 0;
     margin-top: 10px;
-    fill:none;
+    fill: none;
     margin-bottom: 10px;
+    width: 100%; /* Make input fields full width */
 }
 
 .login-form button[type="submit"] {
@@ -40,4 +42,22 @@
     margin-bottom: 10px;
     background-color: #000505;
     border-radius: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .login-form {
+        width: 95%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .login-form {
+        width: 100%; /* Full width for even smaller screens */
+        padding: 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .login-form button[type="submit"] {
+        width: 100%; /* Make the submit button full width */
+    }
 }
