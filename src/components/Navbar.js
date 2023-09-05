@@ -40,28 +40,30 @@ function Navbar({ user, setUser }) {
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? "fas fa-times" : "fas fa-bars"} />
                     </div>
-                    {button ? (
-                        <ul className={click ? "nav-menu active" : "nav-menu"}>
-                            <li className="nav-item">
-                                <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-                                    About
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/contacts" className="nav-links" onClick={closeMobileMenu}>
-                                    Contacts
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/add-missing-pet" className="nav-links" onClick={closeMobileMenu}>
-                                    + Add Missing Pet
-                                </Link>
-                            </li>
-                        </ul>
-                    ) : null}
-                </div>
-                <div className="btn-logout">
-                        {<Button user={user} setUser={setUser} />}
+                    <div className="nav-links-container">
+                        {button ? (
+                            <ul className={click ? "nav-menu active" : "nav-menu"}>
+                                <li className="nav-item">
+                                    <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+                                        About
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/contacts" className="nav-links" onClick={closeMobileMenu}>
+                                        Contacts
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/add-missing-pet" className="nav-links" onClick={closeMobileMenu}>
+                                        + Add Missing Pet
+                                    </Link>
+                                </li>
+                            </ul>
+                        ) : null}
+                        <div className="btn-logout">
+                            {<Button user={user} setUser={setUser} />}
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

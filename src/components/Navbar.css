@@ -30,9 +30,20 @@
     align-items: center;
 }
 
-.btn-logout {
-    margin-right: 20px; /* Add this line for spacing */
+.nav-links-container {
+    display: flex;
+    align-items: center; /* Vertically align menu items and logout button */
 }
+
+
+
+.btn-logout {
+    /* ... (Previous CSS rules) ... */
+    margin-left: 20px; /* Add left margin to create space between logo and logout button */
+    
+}
+
+
 
 /* Common styles for menu items */
 .nav-menu {
