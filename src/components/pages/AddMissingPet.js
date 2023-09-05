@@ -68,7 +68,6 @@ function AddMissingPet() {
                 <label className="label">
                     Image_url
                     <input
-                    style={{ width: "420px" }}
                     type="img"
                     onChange={(e) => handleChange(e)}
                     id="image_url"
@@ -82,11 +81,10 @@ function AddMissingPet() {
                     Last_Seen_Location
                     <textarea
                     className="dog-area"
-                    style={{ width: "1025px" }}
                     onChange={(e) => handleChange(e)}
                     name="last_seen"
                     id="last_seen"
-                    cols="50"
+                    cols="20"
                     rows="3"
                     value={newData.last_seen}
                     ></textarea>
